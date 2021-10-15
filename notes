@@ -1,1 +1,5 @@
 uses node 14.15.0  
+
+npx create-react-app crwn-clothing --template cra-template-pwa
+
+yarn add node-sass
