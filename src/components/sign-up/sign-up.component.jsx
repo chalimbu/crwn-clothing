@@ -14,7 +14,7 @@ class SignUp extends React.Component {
       displayName: "",
       email: "",
       password: "",
-      confirmPassword: "",
+      confirmPassword: ""
     };
   }
 
@@ -36,7 +36,7 @@ class SignUp extends React.Component {
         displayName: "",
         email: "",
         password: "",
-        confirmPassword: "",
+        confirmPassword: ""
       });
     } catch (error) {
       console.log(error);
@@ -51,24 +51,24 @@ class SignUp extends React.Component {
   render() {
     const { displayName, email, password,confirmPassword } = this.state;
     return (
-      <div className="sign-up">
-        <h2 className="title">I do not have a account</h2>
+      <div className='sign-up'>
+        <h2 className='title'>I do not have a account</h2>
         <span> Sign up with your email and password</span>
         <form className="sign-up-form" onSubmit={this.handlSubmit}>
           <FormInput
-            type="text"
-            name="displayName"
+            type='text'
+            name='displayName'
             value={displayName}
             onChange={this.handleChange}
-            label="user"
+            label='Display Name'
             required
           />
           <FormInput
-            type="email"
-            name="email"
+            type='email'
+            name='email'
             value={email}
             onChange={this.handleChange}
-            label="Email"
+            label='Email'
             required
           />
           <FormInput
@@ -84,10 +84,10 @@ class SignUp extends React.Component {
             name="confirmPassword"
             value={confirmPassword}
             onChange={this.handleChange}
-            label="Password"
+            label="Confirm Password"
             required
           />
-          <CustomButton type="submit">Sign up</CustomButton>
+          <CustomButton type="submit">SIGN UP</CustomButton>
         </form>
       </div>
     );
